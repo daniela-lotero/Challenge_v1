@@ -8,4 +8,10 @@
 
 <p><%= link_to "Editar", edit_cocktail_path%>
 
+<%= link_to "Borrar",
+  cocktail_path(@cocktail),
+  data: {turbo_method: :delete, turbo_confirm: "Deseas eliminar este artículo?"}
+%>
+
+
 <p><%= link_to "Regresar a la lista", cocktails_path%></p>
