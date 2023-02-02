@@ -1,0 +1,17 @@
+<%= form_with model: @cocktail do |f| %>
+  <%= f.label :Name %>
+  <%= f.text_field :name %> <br>
+  <%= f.label :Category %>
+  <%= f.text_field :category %> <br>
+  <%= f.label :Ingredients %>
+  <%= f.text_field :ingredients %><br>
+  <%= f.label :Recipe %>
+  <%= f.text_field :recipe %><br>
+  <%= f.label :Price %>
+  <%= f.number_field :price %><br>
+  <%= f.label :phot_url %>
+  <%= f.text_field :phot_url %><br>
+  <%= f.label :"Available Units" %>
+  <%= f.number_field :units %><br>
+  <%= f.submit %>
+<% end %>
