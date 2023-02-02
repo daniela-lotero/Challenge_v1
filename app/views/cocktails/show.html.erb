@@ -1,0 +1,10 @@
+<h2><%= @cocktail.name %></h2>
+<p>Categoría: <%= @cocktail.category %></p>
+<p>Ingredientes: <%= @cocktail.ingredients %></p>
+<p>Receta: <%= @cocktail.recipe %></p>
+<p>Precio: <%= @cocktail.price %> COP</p>
+<p><%= @cocktail.photo_url %></p>
+<p>Unidades dispobiles: <%= @cocktail.units %></p>
+
+
+<p><%= link_to "Regresar a la lista", cocktails_path%></p>
